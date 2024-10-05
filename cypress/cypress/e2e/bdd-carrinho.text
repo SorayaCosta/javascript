@@ -1,0 +1,31 @@
+Funcionalidade: Carrinho de Compras
+
+Cenário: Adicionar um produto ao carrinho com sucesso
+    Dado que eu estou na página de login
+    Quando eu informo o usuário "standard_user" e a senha "secret_sauce"
+    E eu clico no botão de login
+    E eu adiciono o produto "Sauce Labs Backpack" ao carrinho
+    Então o ícone do carrinho deve mostrar "1"
+
+Cenário: Verificar se o produto correto foi adicionado ao carrinho
+    Dado que eu estou na página de login
+    Quando eu informo o usuário "standard_user" e a senha "secret_sauce"
+    E eu clico no botão de login
+    E eu adiciono o produto "Sauce Labs Backpack" ao carrinho
+    E eu clico no ícone do carrinho
+    Então eu devo ver o produto "Sauce Labs Backpack" no carrinho
+
+Cenário: Adicionar três produtos ao carrinho com sucesso
+    Dado que eu estou na página de login
+    Quando eu informo o usuário "standard_user" e a senha "secret_sauce"
+    E eu clico no botão de login
+    E eu adiciono os produtos "Sauce Labs Backpack", "Sauce Labs Bike Light" e "Sauce Labs Bolt T-Shirt" ao carrinho
+    Então o ícone do carrinho deve mostrar "3"
+
+Cenário: Verificar se os três produtos corretos foram adicionados ao carrinho
+    Dado que eu estou na página de login
+    Quando eu informo o usuário "standard_user" e a senha "secret_sauce"
+    E eu clico no botão de login
+    E eu adiciono os produtos "Sauce Labs Backpack", "Sauce Labs Bike Light" e "Sauce Labs Bolt T-Shirt" ao carrinho
+    E eu clico no ícone do carrinho
+    Então eu devo ver os produtos "Sauce Labs Backpack", "Sauce Labs Bike Light" e "Sauce Labs Bolt T-Shirt" no carrinho

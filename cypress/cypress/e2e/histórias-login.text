@@ -1,0 +1,21 @@
+Funcionalidade: Login
+
+História: Realizar um login com sucesso
+    Eu como um usuário do site,
+    Quando eu insiro o nome de usuário "standard_user", a senha "secret_sauce" e clico no botão de login,
+    Então eu devo ser redirecionado para a página de inventário "https://www.saucedemo.com/inventory.html".
+
+História: Realizar um login com insucesso - usuário inexistente
+    Eu como um usuário que tenta acessar o site,
+    Quando eu insiro o nome de usuário "unknown_user", a senha "secret_sauce" e clico no botão de login,
+    Então eu devo ver uma mensagem de erro "Epic sadface: Username and password do not match any user in this service".
+
+História: Realizar um login com insucesso - senha incorreta
+    Eu como um usuário que tenta acessar o site,
+    Quando eu insiro o nome de usuário "standard_user", a senha "unknown_password" e clico no botão de login,
+    Então eu devo ver uma mensagem de erro "Epic sadface: Username and password do not match any user in this service".
+
+História: Realizar um login com insucesso - usuário bloqueado
+    Eu como um usuário que tenta acessar o site,
+    Quando eu insiro o nome de usuário "locked_out_user", a senha "secret_sauce" e clico no botão de login,
+    Então eu devo ver uma mensagem de erro "Epic sadface: Sorry, this user has been locked out".
